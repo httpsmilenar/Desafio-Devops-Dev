@@ -3,5 +3,11 @@
 
 <p align="center"> <img src=".github/workflows/Dockerimg-png.png" /> </p>
 
-## Qual era o desafio e seu objetivo?
+## QUAL ERA O OBJETIVO?
 O  desafio era subir um deploy Api em Django + PostgreSQL utilizando containers, tendo como objetivo testar e mostar noções de DevOps, em especial na parte de CI/CD.
+
+
+## ETAPA DE DESENVOLVIMENTO
+1. Comecei criando o Dockerfile para construir a aplicação
+<br/>
+🔗 [***Dockerfile***](https://docs.docker.com/engine/reference/builder/)
