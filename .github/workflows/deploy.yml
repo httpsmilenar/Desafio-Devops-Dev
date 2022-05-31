@@ -31,13 +31,6 @@ jobs:
       - name: Up composer
         run: |
           docker compose up -d
-      
-  deploy-dev:
-    name: Deploy Dev
-    runs-on: ubuntu-latest
-    environment: dev
-    needs: [build]
-    steps:
-    
       - name: Test
-        run: echo 'Deploy Dev'
+        run: |
+          python web/manage.py test    
