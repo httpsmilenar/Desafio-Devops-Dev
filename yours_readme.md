@@ -1,5 +1,6 @@
 <h1 align="center"> FREXCO DEVOPS</h1> 
                   Aplicação (DEPLOY) Api em Django + PostgreSQL, com utilização de containers Docker e Docker Compose.
+                  
 
 <p align="center"> <img src=".github/workflows/Dockerimg-png.png" /> </p>
 
@@ -8,8 +9,18 @@ O  desafio era subir um deploy Api em Django + PostgreSQL utilizando containers,
 
 
 ## ETAPA DE DESENVOLVIMENTO
-1. Comecei criando o Dockerfile para construir a aplicação
+⚡️ Comecei criando o Dockerfile para construir a aplicação.
 🔗(https://docs.docker.com/engine/reference/builder/)
 
-2. Subi o container com o Docker-compose utilizando a ##PORTA## 5432:5432 e ##IMAGEM## postgres:latest.
-🔗 (https://docs.docker.com/compose/)
+⚡️ Subi o container com o Docker-compose utilizando a porta (5432:5432) e imagem (postgres:latest).
+🔗(https://docs.docker.com/compose/)
+🔗(https://hub.docker.com/_/postgres)
+
+⚡️ Utilizei a Pipeline CI para automatizar a aplicação.
+🔗(https://pt.wikipedia.org/wiki/CI/CD)
+
+⚡️ Imlementei uma nova instância no Docker com conecxão ao banco de dados PostgreSQL.
+🔗(https://www.postgresql.org/)
+
+⚡️ Por fim, Utilizei NGINX para permitir o acesso através da porta 80.
+🔗(https://www.nginx.com/)
