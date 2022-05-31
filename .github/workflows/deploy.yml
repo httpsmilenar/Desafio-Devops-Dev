@@ -39,5 +39,6 @@ jobs:
          DB_PASS: postgres
          DB_SERVICE: postgres
          DB_PORT: 5432  
+         HOST: localhost
         run: |
           python web/manage.py test    
