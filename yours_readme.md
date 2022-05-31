@@ -24,3 +24,11 @@ O  desafio era subir um deploy Api em Django + PostgreSQL utilizando containers,
 
 ⚡️ Por fim, Utilizei NGINX para permitir o acesso através da porta 80.
 🔗(https://www.nginx.com/)
+
+
+## 💻 COMO REAZLIZAR O DEPLOY?
+Você consegue realziar o deploy em apenas três passsos:
+
+1.Ter o Docker e o Docker-compose instalado em sua máquina.
+2. Abra um terminal dentro de sua pasta da aplicação e digite o comando: "sudo docker-compose up -d".
+3. Para visualizar a aplicação, acesse: http://localhost:8000
