@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+
+    postgres:
+        image: postgres:latest
+        volumes:
+            - postgres_data:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=postgres
+            - POSTGRES_PASSWORD=postgres
+        ports:
+            - 5432:5432
+        restart: always
+        networks:
+              - djangonetwork
+
+    web:
+        build: .
+        command: python web/manage.py runserver 0.0.0.0:8000
+        volumes:
+            - .:/docker_django
+        ports:
+          -  8000:8000
+        environment:
+            - SECRET_KEY=postgres
+        depends_on:
+            - postgres
+        networks:
+            - djangonetwork
+        expose:
+            - 8012
+        
+networks:
+      djangonetwork:
+          driver: bridge
+
+volumes:
+    postgres_data:
