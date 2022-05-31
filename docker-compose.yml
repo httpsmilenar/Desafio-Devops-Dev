@@ -1,6 +1,10 @@
 version: '3.8'
 
 services:
+  nginx:
+    image: nginx:1.21
+    ports:
+    - 80:80
 
     postgres:
         image: postgres:latest
