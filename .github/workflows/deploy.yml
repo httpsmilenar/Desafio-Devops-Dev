@@ -32,5 +32,12 @@ jobs:
         run: |
           docker compose up -d
       - name: Test
+        env:
+         SECRET_KEY: postgres
+         DB_NAME: postgres
+         DB_USER: postgres
+         DB_PASS: postgres
+         DB_SERVICE: postgres
+         DB_PORT: 5432  
         run: |
           python web/manage.py test    
