@@ -9,5 +9,7 @@ O  desafio era subir um deploy Api em Django + PostgreSQL utilizando containers,
 
 ## ETAPA DE DESENVOLVIMENTO
 1. Comecei criando o Dockerfile para construir a aplicação
-<br/>
-🔗 [***Dockerfile***](https://docs.docker.com/engine/reference/builder/)
+🔗(https://docs.docker.com/engine/reference/builder/)
+
+2. Subi o container com o Docker-compose utilizando a ##PORTA## 5432:5432 e ##IMAGEM## postgres:latest.
+🔗 (https://docs.docker.com/compose/)
